@@ -145,7 +145,7 @@ namespace Capstone_Task_List
                     result = result - 1;
                     if (result < toDos.Count && result >= 0)
                     {
-                        Console.WriteLine($"{toDos[result].Name}, {toDos[result].Description}, {toDos[result].DueDate}, {toDos[result].Complete}");
+                        Console.WriteLine($"{toDos[result].Name} | {toDos[result].Description} | {toDos[result].DueDate} | {toDos[result].Complete}");
                         Console.WriteLine("\nAre you sure you want to mark this task complete? y/n");
                         string completeInput = Console.ReadLine();
 
@@ -154,7 +154,7 @@ namespace Capstone_Task_List
                             toDos[result].Complete = true;
                             again = false;
                         }
-                        else if (completeInput == "n" || completeInput == "Y")
+                        else if (completeInput == "n" || completeInput == "N")
                         {
                             again = false;
                         }
